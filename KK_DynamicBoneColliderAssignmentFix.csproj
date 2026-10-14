@@ -1,0 +1,38 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <TargetGame Condition="'$(TargetGame)' == ''">KK</TargetGame>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion Condition="'$(TargetGame)' != 'KKS'">v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion Condition="'$(TargetGame)' == 'KKS'">v4.0</TargetFrameworkVersion>
+    <AssemblyName>$(TargetGame)_DynamicBoneColliderAssignmentFix</AssemblyName>
+    <DefineConstants Condition="'$(TargetGame)' == 'KKS'">KKS</DefineConstants>
+    <RootNamespace>DynamicBoneColliderAssignmentFix</RootNamespace>
+    <IntermediateOutputPath>obj\$(TargetGame)\</IntermediateOutputPath>
+    <OutputPath>Release\</OutputPath>
+    <OutputPath Condition="'$(TargetGame)' == 'KKS'">Release\KKS\</OutputPath>
+    <Optimize>true</Optimize>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GameRoot Condition="'$(GameRoot)' == ''">$(KOIKATSU_ROOT)</GameRoot>
+    <CoreRoot Condition="'$(CoreRoot)' == ''">$(GameRoot)\BepInEx\core</CoreRoot>
+    <ManagedRoot Condition="'$(ManagedRoot)' == ''">$(GameRoot)\CharaStudio_Data\Managed</ManagedRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="BepInEx"><HintPath>$(CoreRoot)\BepInEx.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(CoreRoot)\0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(ManagedRoot)\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule" Condition="'$(TargetGame)' == 'KKS'"><HintPath>$(ManagedRoot)\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Compile Include="src\AssignmentPolicy.cs" />
+    <Compile Include="src\KkpeAccess.cs" />
+    <Compile Include="src\Plugin.cs" />
+    <Compile Include="src\ConfigMigration.cs" />
+    <Compile Include="src\RuntimeCompatibility.cs" />
+    <Compile Include="src\HarmonyBridge.cs" />
+    <Content Include="docs\README.txt"><Link>README.txt</Link><CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory></Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
