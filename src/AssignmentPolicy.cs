@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2026 unica. Licensed under the MIT License.
+﻿// Copyright (c) 2026 KCFunica. Licensed under the MIT License.
 using System;
 using System.Collections.Generic;
 

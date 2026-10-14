@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2026 unica. Licensed under the MIT License.
+﻿// Copyright (c) 2026 KCFunica. Licensed under the MIT License.
 using System;
 using System.Reflection;
 using BepInEx;
@@ -8,7 +8,7 @@ using BepInEx.Bootstrap;
 
 [assembly: AssemblyTitle("Dynamic Bone Collider Assignment Fix")]
 [assembly: AssemblyCompany("unica")]
-[assembly: AssemblyCopyright("Copyright (c) 2026 unica")]
+[assembly: AssemblyCopyright("Copyright (c) 2026 KCFunica")]
 [assembly: AssemblyVersion("0.2.1.0")]
 [assembly: AssemblyFileVersion("0.2.1.0")]
 

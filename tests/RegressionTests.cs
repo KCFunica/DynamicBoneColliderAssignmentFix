@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2026 unica. Licensed under the MIT License.
+﻿// Copyright (c) 2026 KCFunica. Licensed under the MIT License.
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -167,7 +167,7 @@ internal static class Tests
                 Check(typeof(UnityEngine.Component).IsAssignableFrom(plugin), "Unity reference is incompatible");
                 Check(production.GetName().Version.ToString() == "0.2.1.0", "stale artifact tested");
                 AssemblyCopyrightAttribute copyright = (AssemblyCopyrightAttribute)Attribute.GetCustomAttribute(production, typeof(AssemblyCopyrightAttribute));
-                Check(copyright != null && copyright.Copyright == "Copyright (c) 2026 unica", "copyright metadata mismatch");
+                Check(copyright != null && copyright.Copyright == "Copyright (c) 2026 KCFunica", "copyright metadata mismatch");
                 string publicGuid = (string)plugin.GetField("Guid").GetRawConstantValue();
                 Check(publicGuid.StartsWith("io.github.KCFunica."), "public identifier mismatch");
             });

@@ -4,7 +4,7 @@
 
 | ファイル | 変更内容 |
 | --- | --- |
-| LICENSE | 利用者承認済みのMIT License全文。著作権表示は `Copyright (c) 2026 unica`。 |
+| LICENSE | 利用者承認済みのMIT License全文。著作権表示は `Copyright (c) 2026 KCFunica`。 |
 | README.md | 日本語の導入・依存関係・ビルド・配布手順。確認済み環境と未確認環境を区別。作者unica／公開用識別名KCFunica。 |
 | src/Plugin.cs | AssemblyCompanyはunica、AssemblyCopyrightは指定どおり。KK/KKSのGUIDを `io.github.KCFunica...` へ変更。旧設定を安全にコピーして再読込。 |
 | src/ConfigMigration.cs | 設定引き継ぎ処理を追加。新設定が存在すれば上書きしない。同じゲーム向けの旧設定が1つだけならコピーし、旧ファイルは残す。候補が複数なら移行を止めてログに記録。 |
