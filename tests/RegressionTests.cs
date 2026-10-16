@@ -168,6 +168,8 @@ internal static class Tests
                 Check(production.GetName().Version.ToString() == "0.2.1.0", "stale artifact tested");
                 AssemblyCopyrightAttribute copyright = (AssemblyCopyrightAttribute)Attribute.GetCustomAttribute(production, typeof(AssemblyCopyrightAttribute));
                 Check(copyright != null && copyright.Copyright == "Copyright (c) 2026 KCFunica", "copyright metadata mismatch");
+                AssemblyCompanyAttribute company = (AssemblyCompanyAttribute)Attribute.GetCustomAttribute(production, typeof(AssemblyCompanyAttribute));
+                Check(company != null && company.Company == "KCFunica", "author metadata mismatch");
                 string publicGuid = (string)plugin.GetField("Guid").GetRawConstantValue();
                 Check(publicGuid.StartsWith("io.github.KCFunica."), "public identifier mismatch");
             });

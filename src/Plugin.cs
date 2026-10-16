@@ -7,7 +7,7 @@ using HarmonyLib;
 using BepInEx.Bootstrap;
 
 [assembly: AssemblyTitle("Dynamic Bone Collider Assignment Fix")]
-[assembly: AssemblyCompany("unica")]
+[assembly: AssemblyCompany("KCFunica")]
 [assembly: AssemblyCopyright("Copyright (c) 2026 KCFunica")]
 [assembly: AssemblyVersion("0.2.1.0")]
 [assembly: AssemblyFileVersion("0.2.1.0")]

@@ -70,7 +70,7 @@ DebugLogging=trueにして再現し、BepInEx\LogOutput.logを確認してくだ
 
 ■ ライセンス・作者
 MIT License。Copyright (c) 2026 KCFunica
-作者: unica / 公開用識別名: KCFunica
+作者: KCFunica / 公開用識別名: KCFunica
 LICENSEとTHIRD_PARTY_NOTICES.mdを参照してください。
 今回の公開準備ではゲームを起動していません。0.2.1の保存・再読込は個別確認済みとは扱いません。
 

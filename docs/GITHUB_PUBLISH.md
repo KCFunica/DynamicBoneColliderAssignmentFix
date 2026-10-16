@@ -4,7 +4,7 @@
 
 ## 公開前
 
-1. 本人から提示されたnoreplyアドレスと作者名unicaは設定済みです。初回ローカルコミットも作成済みです。GitHub Desktopは同じアカウントでログインしてください。
+1. 本人から提示されたnoreplyアドレスと作者名KCFunicaは設定済みです。初回ローカルコミットも作成済みです。GitHub Desktopは同じアカウントでログインしてください。
 2. [変更一覧](PUBLICATION_CHANGES.md)、[検査結果](PUBLICATION_AUDIT.md)、[リリースノート](RELEASE_NOTES_0.2.1.md) を確認します。
 3. 今回のDLLは名称変更・設定移行追加後のStudio実機確認が未実施です。KKの過去の利用者確認実績と区別してください。KKSの実機未確認表示を維持してください。
 
@@ -12,7 +12,7 @@
 
 1. File → Add local repository → Chooseで公開用フォルダを選択し、Add repositoryを押します。
 2. Changesに表示されるのがソース・スクリプト・説明・LICENSEだけであることを確認します。DLL、ZIP、research、ゲームデータはコミットしません。
-3. 初回コミットは作成済みです。Historyで作者がunicaであることを確認します。追加変更がなければコミット操作は不要です。
+3. 初回コミットは作成済みです。現在のGit作成者設定はKCFunicaです。過去2件のコミットは変更前の作成者名を保持しています。追加変更がなければコミット操作は不要です。
 4. Publish repositoryを押し、名前を `DynamicBoneColliderAssignmentFix` とします。一般公開する時はKeep this code privateのチェックを外し、確認後にPublish repositoryを押します。この操作がGitHubへの公開です。
 
 ## 完成DLLの公開（ブラウザでの操作）

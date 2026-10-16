@@ -77,7 +77,7 @@ KKは省略時に `KOIKATSU_ROOT` またはローカルのゲームフォルダ�
 
 ## ライセンスと第三者資料
 
-本プラグインは [MIT License](LICENSE) で公開します。著作権表示は `Copyright (c) 2026 KCFunica` です。公開用識別名は `KCFunica`、作者名は `unica` です。
+本プラグインは [MIT License](LICENSE) で公開します。著作権表示は `Copyright (c) 2026 KCFunica` です。公開用識別名は `KCFunica`、作者名は `KCFunica` です。
 
 依存ソフトウェア・調査資料の扱いは [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) に記載しています。ゲームDLL・第三者DLL・逆アセンブル資料・ダウンロードしたソース・シーン・キャラカード・ログは公開対象から除外しています。非公式の補助プラグインです。
 
